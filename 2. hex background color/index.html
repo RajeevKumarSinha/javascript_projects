@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<style>
+    .text{
+        font-size: xx-large;
+        text-align: center;
+        margin-top: 20%;
+        font-weight:bold;
+        margin-bottom: 10px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .btn{
+        color:black;
+        border: 1px solid black;
+        padding: 10px;
+        margin-left: 42%;
+    }
+    .btn:hover{
+        color: white;
+        background-color: black;
+    }
+</style>
+    </head>
+    <body id="body">
+        <div class="text">
+        <span >HEX CODE : </span>
+        <p id="hexcode" style="display: inline;"></p>
+    </div>
+        <button onclick="changeColor()" class="btn">CLICK ME TO CHANGE COLOR!</button>
+        <script>
+            function changeColor(){
+                let hexNo=Math.floor(Math.random()*1000000)+1;
+                document.getElementById('hexcode').innerHTML="#"+hexNo.toString();
+                document.getElementById("body").style.backgroundColor='#'+hexNo.toString();
+            }
+        </script>
+    </body>
+</html>
