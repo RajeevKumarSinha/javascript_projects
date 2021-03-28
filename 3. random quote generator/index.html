@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <script src="https://kit.fontawesome.com/85e122e619.js" crossorigin="anonymous"></script>
+<style>
+    .font{
+        font-size:10vw;
+    }
+    .quotebox{
+        margin-top: 8%;
+        margin-left: 20%;
+        padding: 5% 0 2% 0;
+        width:60%;
+        background-color: silver;
+       
+    }
+    .quoteTextCls{
+        color:gray;
+        font-size: 2.5vw;
+        margin: 0 10% 0 10%;
+        display: inline-block;
+        font-family:  sans-serif;
+        margin-bottom: 10px;
+    }
+    .bdy{
+        background-color: cadetblue;
+    }
+    .quoteBtn{
+        padding: 15px;
+        outline: none;
+        border: none;
+        color:cornsilk;
+        background-color: lightblue;
+        border-bottom:2px solid black;
+        border-right:2px solid black;
+        font-size: x-large;
+        margin-left:35%;
+        margin-bottom:2%;
+
+    }
+    .quoteBtn:hover{
+        color: black;
+        background-color: lightcoral;
+        cursor: pointer;
+    }
+    .authorCls{
+        text-align: right;
+        font-size: x-large;
+        color:green;
+    }
+</style>
+</head>
+
+<body class="bdy">
+    <div class="quotebox">
+    <button onclick="changeQuote()" class='quoteBtn'>GENERATE QUOTE</button>
+    <br/>
+    <div class="quoteTextCls">
+    <i class="fas fa-quote-left font"></i>
+    <span id="quoteid" ></span>
+    <p id="authorid" class="authorCls"></p>
+</div>
+    
+</div>
+
+    <script>
+        (function () {
+            var quotelist = {
+                quote: "loreium ipsum ddfghjk hjkfhjdlks dflsdjfhfilf dfwfw fwf   h fhf wfh hf s falof",
+                author: "-author"
+            };
+            document.getElementById('quoteid').innerHTML = quotelist.quote;
+            document.getElementById('authorid').innerHTML = quotelist.author;
+        })();
+
+        
+        var quotelist = [{
+            quote: "The greatest glory in living lies not in never falling, but in rising every time we fall.",
+            author: "-Nelson Mandela"
+        },
+        {
+            quote:"The way to get started is to quit talking and begin doing.",
+             author:"-Walt Disney"
+        },
+        {
+            quote:"Your time is limited, so don't waste it living someone else's life. Don't be trapped by dogma – which is living with the results of other people's thinking.",
+             author:"-Steve Jobs"
+        },
+        {
+            quote:"If life were predictable it would cease to be life, and be without flavor.",
+             author:"-Eleanor Roosevelt"
+        }
+
+        ];
+        
+        function changeQuote() {
+            var quoteindex=Math.floor(Math.random()*3);
+            document.getElementById('quoteid').innerHTML=quotelist[quoteindex].quote;
+            document.getElementById('authorid').innerHTML=quotelist[quoteindex].author;
+        }
+    </script>
+</body>
+
+</html>
