@@ -1,0 +1,37 @@
+.body{
+    background-color: #95B8D1;
+}
+.msgBox{
+    width: 50%;
+    background-color: #F5F5F5;
+    margin-left: 25%;
+    margin-top: 15%;
+    /* border:1px solid red; */
+}
+.font-family{
+    font-family: arial;
+    text-align: center;
+    padding-top:1vw;
+}
+.inptTxt{
+    width:90%;
+    margin-left: 4.5%;
+    height: 3vw;
+}
+.submitBtn{
+    background-color: #95B8D1;
+    border: none;
+    padding: 15px;
+    font-size: large;
+    border-radius:5px ;
+    margin-top: 1vw;
+    margin-left: 42%;
+    color:white
+}
+.submitBtn:hover{
+    color: black;
+}
+.color{
+    color:#95B8D1;
+    padding-bottom: 20px;
+}
