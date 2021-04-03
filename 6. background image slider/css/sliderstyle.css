@@ -1,0 +1,50 @@
+.sliderBox{
+    color: red;
+    font-size: xx-large;
+    /* border: 1px solid yellow; */
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 4%;
+    height: 40vw;
+    /* background-image: url('../image/yellowferrari.jpg'); */
+    background-size: cover;
+}
+.left{
+    position: relative;
+    z-index: 1;
+    bottom: 23vw;
+    left: 6vw;
+    width: 1vw;
+    /* margin:initial !important; */
+    /* margin-top: 17vw !important; */
+    color: lightgray;
+    padding:0px 19px 2px 13px;
+    /* background-color: black; */
+    border-radius: 50%;
+}
+.left:hover,.right:hover{
+background-color: rgb(6, 173, 250);
+color: black;
+cursor: pointer;
+}
+.right{
+    position: relative;
+    z-index: 1;
+    bottom: 25.5vw;
+    right: 6vw;
+    width: 1vw;
+    z-index: 1;
+    color: lightgray;
+    /* display: inline-block; */
+    /* margin-top: 17vw !important; */
+    float: right;
+    padding:0px 16px 2px 16px;
+    /* background-color: black; */
+    border-radius: 50%;
+}
+.img{
+    margin-left: 10%;
+    margin-right: 5%;
+    width: inherit;
+    height: inherit;
+}
