@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEMPLATE</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <!-- navbar starts from here -->
+    <div class="container-fluid">
+        <div class="row pt-2 pb-2 navContainer navbar navbar-expand-lg">
+            <div class="col-3 logo navbar-brand">
+                <img src="images/logo.svg" alt="" class="logO">
+            </div>
+            <button class="navbar-toggler outline" type="button" data-toggle="collapse"
+                data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon">
+                    <i class="fas fa-bars  tgle"></i>
+                </span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <div class="col-1 p-0 pt-2"><a href="#" class="navlink">Home</a></div>
+                <div class="col-1 p-0 pt-2"><a href="#" class="navlink">About</a></div>
+                <div class="col-1 mr-5 p-0 pt-2"><a href="#" class="navlink">Store</a></div>
+                <div class="col-2 p-0 mr-3 pt-2 font d-lg-inline d-none"><i class="fas fa-phone pr-2"></i>+1234567890
+                </div>
+                <div class="col-3 p-0 pt-2 font d-lg-inline d-none"> <span class="crt p-2"><i
+                            class="fas fa-shopping-cart pr-2"></i> 2Items-$10.49</span></div>
+            </div>
+        </div>
+    </div>
+    <!-- nav bar complete -->
+
+
+    <!-- welcome to granmas starts  -->
+    <div class="background">
+        <p class="text-center font welcome">Welcome To <span class="grandmas">Grandma's</span></p>
+        <button class="exploreBtn font text-center">EXPLORE</button>
+    </div>
+    <!-- grandmas section over  here -->
+
+    <!-- about section starts here -->
+
+    <div class="container mt-5 mb-5">
+        <div class="row pt-5">
+            <div class="col-md-5 col-12  mb-5 mt-md-0 mr-md-5">
+                <p class="aBout font">About <span class="uS">Us</span></p>
+                <p class="font text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, aliquam
+                    voluptas beatae vitae expedita consectetur nesciunt quia deserunt asperiores facere fuga dicta
+                    fugiat corrupti et omnis porro at dolorum! Ad!</p>
+                <button class="exploreBtn2 font text-center">EXPLORE</button>
+            </div>
+            <div class="col-md-5 col-12 offset-md-1  mt-5 mb-5 boxx p-0">
+                <img src="images/sweets-1.jpeg" alt="" class=" zoom img_box">
+            </div>
+        </div>
+    </div>
+
+    <!-- about us section ends here -->
+
+    <div class="container-fluid mt-5 pt-5 storeBg pb-5">
+        <div class="container">
+            <p class="aBout font text-center">Our<span class="uS">Store</span></p>
+            <div class="col-8 offset-2">
+                <button class="exploreBtn2 font text-center ml-5" id="all">ALL</button>
+                <button class="exploreBtn2 font text-center ml-4" id="cake">CAKE</button>
+                <button class="exploreBtn2 font text-center ml-4" id="cupcake">CUP CAKE</button>
+                <button class="exploreBtn2 font text-center ml-4" id="sweets">SWEETS</button>
+                <button class="exploreBtn2 font text-center ml-4" id="doughnuts">DOUGHNUTS</button>
+                <div class="mt-4 offset-1"><i class="fa fa-search find"></i>
+                    <input type="text" class="col-10 font" placeholder="items.... " id="usrText" onkeyup="search()">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- our store items part -->
+    <div class="offset-md-t pb-5">
+        <div class="d-none" id="card0">
+            <div class=" col-lg-t  mt-5 bg-light p-0 border shadow d-md-inline-block ">
+                <img src="" id="items0" alt="" class="imgItem">
+                <div class="mt-3 mb-3">
+                    <span id="nameItem0" class="ml-3 font fontSiz"></span><span id="priceItem0"
+                        class="float-right mr-3 font fontSiz"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-none" id="card1">
+            <div class=" col-lg-t  mt-5 bg-light p-0 border shadow d-md-inline-block ">
+                <img src="" id="items1" alt="" class="imgItem">
+                <div class="mt-3 mb-3">
+                    <span id="nameItem1" class="ml-3 font fontSiz"></span><span id="priceItem1"
+                        class="float-right mr-3 font fontSiz"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-none" id="card2">
+            <div class=" col-lg-t  mt-5 bg-light p-0 border shadow d-md-inline-block ">
+                <img src="" id="items2" alt="" class="imgItem">
+                <div class="mt-3 mb-3">
+                    <span id="nameItem2" class="ml-3 font fontSiz"></span><span id="priceItem2"
+                        class="float-right mr-3 font fontSiz"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-none" id="card3">
+            <div class=" col-lg-t  mt-5 bg-light p-0 border shadow d-md-inline-block ">
+                <img src="" id="items3" alt="" class="imgItem">
+                <div class="mt-3 mb-3">
+                    <span id="nameItem3" class="ml-3 font fontSiz"></span><span id="priceItem3"
+                        class="float-right mr-3 font fontSiz"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-none" id="card4">
+            <div class=" col-lg-t  mt-5 bg-light p-0 border shadow d-md-inline-block ">
+                <img src="" id="items4" alt="" class="imgItem">
+                <div class="mt-3 mb-3">
+                    <span id="nameItem4" class="ml-3 font fontSiz"></span><span id="priceItem4"
+                        class="float-right mr-3 font fontSiz"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-none" id="card5">
+            <div class=" col-lg-t  mt-5 bg-light p-0 border shadow d-md-inline-block ">
+                <img src="" id="items5" alt="" class="imgItem">
+                <div class="mt-3 mb-3">
+                    <span id="nameItem5" class="ml-3 font fontSiz"></span><span id="priceItem5"
+                        class="float-right mr-3 font fontSiz"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-none" id="card6">
+            <div class=" col-lg-t  mt-5 bg-light p-0 border shadow d-md-inline-block ">
+                <img src="" id="items6" alt="" class="imgItem">
+                <div class="mt-3 mb-3">
+                    <span id="nameItem6" class="ml-3 font fontSiz"></span><span id="priceItem6"
+                        class="float-right mr-3 font fontSiz"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-none" id="card7">
+            <div class=" col-lg-t  mt-5 bg-light p-0 border shadow d-md-inline-block ">
+                <img src="" id="items7" alt="" class="imgItem">
+                <div class="mt-3 mb-3">
+                    <span id="nameItem7" class="ml-3 font fontSiz"></span><span id="priceItem7"
+                        class="float-right mr-3 font fontSiz"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-none" id="card8">
+            <div class=" col-lg-t  mt-5 bg-light p-0 border shadow d-md-inline-block ">
+                <img src="" id="items8" alt="" class="imgItem">
+                <div class="mt-3 mb-3">
+                    <span id="nameItem8" class="ml-3 font fontSiz"></span><span id="priceItem8"
+                        class="float-right mr-3 font fontSiz"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-none" id="card9">
+            <div class=" col-lg-t  mt-5 bg-light p-0 border shadow d-md-inline-block ">
+                <img src="" id="items9" alt="" class="imgItem">
+                <div class="mt-3 mb-3">
+                    <span id="nameItem9" class="ml-3 font fontSiz"></span><span id="priceItem9"
+                        class="float-right mr-3 font fontSiz"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-none" id="card10">
+            <div class=" col-lg-t  mt-5 bg-light p-0 border shadow d-md-inline-block ">
+                <img src="" id="items10" alt="" class="imgItem">
+                <div class="mt-3 mb-3">
+                    <span id="nameItem10" class="ml-3 font fontSiz"></span><span id="priceItem10"
+                        class="float-right mr-3 font fontSiz"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-none" id="card11">
+            <div class=" col-lg-t  mt-5 bg-light p-0 border shadow d-md-inline-block ">
+                <img src="" id="items11" alt="" class="imgItem">
+                <div class="mt-3 mb-3">
+                    <span id="nameItem11" class="ml-3 font fontSiz"></span><span id="priceItem11"
+                        class="float-right mr-3 font fontSiz"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- javascript file link  -->
+    <script src="js/filter.js"></script>
+    <script src="https://kit.fontawesome.com/85e122e619.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
