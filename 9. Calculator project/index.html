@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!--  -->
+
+    <table class="table2">
+        <tr>
+            <td colspan="4"><input type="text" class="txtfield" id="text"></td>
+        </tr>
+
+        <tr class="row1">
+            <td class="cell" onclick="concat('*')">*</td>
+            <td class="cell" onclick="concat('/')">/</td>
+            <td class="cell" onclick="concat('-')">-</td>
+            <td class="cell" onclick="concat('+')">+</td>
+        </tr>
+        <tr class="row2">
+            <td class="cell" onclick="concat('.')">.</td>
+            <td class="cell" onclick="concat('9')">9</td>
+            <td class="cell" onclick="concat('8')">8</td>
+            <td class="cell" onclick="concat('7')">7</td>
+        </tr>
+        <tr class="row2">
+            <td class="cell" onclick="concat('6')">6</td>
+            <td class="cell" onclick="concat('5')">5</td>
+            <td class="cell" onclick="concat('4')">4</td>
+            <td class="cell" onclick="concat('3')">3</td>
+        </tr>
+        <tr class="row2">
+            <td class="cell" onclick="concat('2')">2</td>
+            <td class="cell" onclick="concat('1')">1</td>
+            <td class="cell" onclick="concat('0')">0</td>
+            <td class="cell equal"  onclick="calculate()" id="equal">=</td>
+        </tr>
+        <tr class="row2">
+            <td class="cell cut"  onclick="concat('c')">C</td>
+        </tr>
+    </table>
+   <script src="js/calc.js"></script> 
+</body>
+</html>
