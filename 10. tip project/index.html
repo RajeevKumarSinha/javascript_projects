@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="body" id="body">
+        <div class="box-wrapper">
+            <h2 class="heading">tip calculator</h2>
+            <div class="err_box">
+                <p id='amount_err'></p>
+                <p id="users_err"></p>
+                <p id="service_err"></p>
+            </div>
+            <p class="form-text">how much was your bill ?</p>
+            <div class="container-inpt">
+                <span class="icon-dollar">$</span>
+                <input type="number" class="inpt" id="amount">
+            </div>
+            <p class="form-text">how many people sharing the bill ?</p>
+            <div class="container-inpt">
+                <span class="icon-dollar">P</span>
+                <input type="number" class="inpt" id='people'>
+            </div>
+            <p class="form-text">how many people sharing the bill ?</p>
+            <!-- <span class="icon-dollar">P</span> -->
+            <!-- <input type="url" class="inpt inpt-last"> -->
+            <select name="" id="tipPercent" class="inpt-last">
+                <option selected="" value="0">Choose...</option>
+                <option value=".2">great-20%</option>
+                <option value=".1">good-10%</option>
+                <option value=".02">bad-2%</option>
+            </select>
+            <button class="btn" id="btnId">Calculate</button>
+            <div class="output">
+                <h2 id="tipAmt"></h2>
+                <h2 id='totalAmt'></h2>
+                <h2 id="each"></h2>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
