@@ -15,11 +15,11 @@ function Reload() {
     let tipPercent = document.getElementById('tipPercent').value;
     errBox.style.display = 'none';
 
-    if (billAmount == '') {
+    if (billAmount == '' || parseFloat(billAmount)<1) {
         errBox.style.display = 'block';
         amount_err.innerHTML = 'Bill Amount Cannot Be Blank';
     }
-    if (noOfPeople == '') {
+    if (noOfPeople == '' || parseFloat(noOfPeople)<1) {
         errBox.style.display = 'block';
         users_err.innerHTML = 'Number Of Users Must Be Greater Than Zero';
     }
@@ -30,7 +30,7 @@ function Reload() {
 
     let output = document.querySelector('.output');
     output.style.display = 'inline';
-    if (billAmount != '' && noOfPeople != '' && tipPercent != 0) {
+    if (billAmount != '' && parseFloat(billAmount) >= 1 && parseFloat(noOfPeople)>=1 && noOfPeople != '' && tipPercent != 0) {
         output.style.display = 'block';
         billAmount = parseFloat(billAmount);
         noOfPeople = parseFloat(noOfPeople);
@@ -41,8 +41,9 @@ function Reload() {
         document.getElementById('tipAmt').innerHTML = `Tip Amount $ ${tipAmount}`;
         document.getElementById('totalAmt').innerHTML =`Total Amount $ ${totalAmount}`;
         document.getElementById('each').innerHTML =`Each Person Owes $ ${amountEach}`;
+        setTimeout(function () { location.reload() }, 10000);
     }
-    setTimeout(function () { location.reload() }, 10000);
+    setTimeout(function () { errBox.style.display = 'none'; }, 10000);
 }
 
 // function for tip amount calculation 
