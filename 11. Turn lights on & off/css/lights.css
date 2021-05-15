@@ -1,0 +1,25 @@
+.div-wrap{
+    margin-top: calc(5% + 2rem);
+    /* border: 1px solid red; */
+    width: 55%;
+    margin-left: 22.5%;
+}
+.btn{
+    display: inline-block;
+    padding: 1em 2em;
+    font-size: large;
+}
+.img_blb{
+    display: inline-block;
+    width: 57%;
+}
+*{
+    padding: 0;
+    margin: 0;
+    background-color: aqua;
+}
+.btn:hover{
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
