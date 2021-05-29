@@ -9,6 +9,7 @@
 .heading{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 3vw;
 }
 .input1{
     border: none;
@@ -20,7 +21,7 @@
     text-transform: capitalize;
     width: 80%;
     height: 2.5vw;
-    font-size: large;
+    font-size: 1.3vw;
     border-radius:5px 0 0 5px ;
 }
 .btn1{
@@ -30,7 +31,7 @@
     /* margin-left: 0;
     padding-left: 0; */
     width: 17%;
-    font-size: large;
+    font-size: 1.3vw;
     height: 2.8vw;
     border-radius: 0 5px 5px 0;
 }
