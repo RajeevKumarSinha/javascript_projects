@@ -60,3 +60,9 @@
 .none{
     display: none;
 }
+.far{
+    cursor: pointer;
+}
+.single-element{
+    margin-top:20px ;
+}
